@@ -38,6 +38,7 @@
   --heading-font: "cocogoose";
 }
 
+/* Reset Styles */
 *,
 *::after,
 *::before {
@@ -51,4 +52,29 @@ html {
 body {
   margin: 0;
   padding: 0;
+}
+
+.page-info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: var(--primary-color);
+  height: 5vh;
+}
+
+.fa {
+  color: var(--body-color);
+  font-size: 1.4rem;
+  padding-right: 1.5rem;
+  position: relative;
+  right: 20rem;
+}
+
+.info-label {
+  font-family: var(--body--font);
+  font-size: 1rem;
+  color: var(--body-color);
+  padding-right: 1.5rem;
+  position: relative;
+  right: 19rem;
 }
