@@ -34,6 +34,7 @@
   --secondary-color: #d3d3d3;
   --accent-color: #ec5242;
   --body-color: #fff;
+  --mobile-secondary-color: #d4d4d4;
   --heading-font: "cocogoose";
 }
 
@@ -127,15 +128,77 @@ body {
   background: transparent;
   color: var(--accent-color);
   padding: 0.75rem 1rem;
+  transition: 0.5s;
 }
 
 .btn:hover {
   background: var(--secondary-color);
-  transition: 0.5s;
+}
+
+.fas {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
   .page-info {
     display: none;
+  }
+
+  .nav-logo {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: rgba(236, 82, 66, 0.8);
+    backdrop-filter: blur(5px);
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    left: 0px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+
+  .nav-items {
+    flex-direction: column;
+    line-height: 5rem;
+    letter-spacing: 3px;
+  }
+
+  .nav-items li a {
+    color: var(--mobile-secondary-color);
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    border: 3px solid var(--mobile-secondary-color);
+    color: var(--mobile-secondary-color);
+    max-width: 50%;
+    padding: 1rem;
+  }
+
+  .btn:hover {
+    background-color: var(--accent-color);
+  }
+
+  .fa-times {
+    display: block;
+    color: var(--primary-color);
+    margin: 1.5rem;
+    padding-left: 0.75rem;
+    font-size: 2.2rem;
+  }
+
+  .fa-bars {
+    display: block;
+    color: var(--primary-color);
+    font-size: 2.6rem;
+    position: fixed;
+    right: 33rem;
+    top: 2.4rem;
   }
 }
