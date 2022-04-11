@@ -161,7 +161,7 @@ body {
   background: rgb(255, 255, 255);
   background: linear-gradient(
       145deg,
-      rgba(255, 255, 255, 0.85) 50%,
+      rgba(255, 255, 255, 0.88) 50%,
       rgba(211, 211, 211, 0.9) 70%
     ),
     url(../images/concert-lights.jpg);
@@ -239,26 +239,42 @@ body {
 }
 
 .subtext p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 500;
   font-family: var(--alternate-font);
   color: #272a31d6;
 }
 
-.date-location {
+.date-text {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   transform: translateY(-50%);
   top: 83%;
-  left: 19%;
+  left: 19.2%;
   padding: 1rem;
   text-align: left;
   max-width: 40%;
   font-family: var(--alternate-font);
   font-weight: 800;
   font-size: 1.8rem;
+  color: #272a31ba;
+}
+
+.location-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 88%;
+  left: 19%;
+  padding: 1rem;
+  text-align: left;
+  max-width: 40%;
+  font-weight: 600;
+  font-size: 1.5rem;
   color: #272a31ba;
 }
 
@@ -347,11 +363,19 @@ body {
     text-align: center;
   }
 
-  .date-location {
+  .date-text {
     max-width: 100%;
     white-space: nowrap;
-    left: 3%;
+    left: 3.5%;
     top: 80%;
+    font-size: 1.5rem;
+  }
+
+  .location-text {
+    max-width: 100%;
+    white-space: nowrap;
+    left: 3.5%;
+    top: 85%;
     font-size: 1.5rem;
   }
 }
