@@ -52,3 +52,4 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Original design idea by Cindy Shin in Behance.
+- Background photo by [anna-m. w.](https://www.pexels.com/photo/people-enjoying-the-concert-1047442/)
