@@ -8,9 +8,9 @@ showMenu.onclick = function showMenu() {
 };
 
 hideMenu.onclick = function hideMenu() {
- navLinks.style.left = '-200px';
+ navLinks.style.left = '-250px';
 };
 
 closeMenu.onclick = function hideMenu() {
- navLinks.style.left = '-200px';
+ navLinks.style.left = '-250px';
 };
