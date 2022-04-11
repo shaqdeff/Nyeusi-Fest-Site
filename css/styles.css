@@ -34,7 +34,6 @@
   --secondary-color: #d3d3d3;
   --accent-color: #ec5242;
   --body-color: #fff;
-  --body--font: "Lato", sans-serif;
   --heading-font: "cocogoose";
 }
 
@@ -52,6 +51,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  font-family: "Lato", sans-serif;
 }
 
 .page-info {
@@ -71,10 +71,71 @@ body {
 }
 
 .info-label {
-  font-family: var(--body--font);
   font-size: 1rem;
   color: var(--body-color);
   padding-right: 1.5rem;
   position: relative;
   right: 19rem;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  max-width: 100%;
+}
+
+.nav-logo {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  margin-top: 1.5rem;
+  left: 2rem;
+  z-index: -10;
+}
+
+.nav-links {
+  text-align: center;
+  position: relative;
+  display: flex;
+  right: 7.5rem;
+}
+
+.nav-items {
+  display: flex;
+  list-style: none;
+}
+
+.nav-items li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1.35rem;
+  padding-right: 4rem;
+}
+
+.nav-items li a:hover {
+  color: var(--accent-color);
+  transition: 0.5s;
+}
+
+.btn {
+  position: relative;
+  left: 3.5rem;
+  border: 4px solid var(--accent-color);
+  outline: none;
+  background: transparent;
+  color: var(--accent-color);
+  padding: 0.75rem 1rem;
+}
+
+.btn:hover {
+  background: var(--secondary-color);
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+  .page-info {
+    display: none;
+  }
 }
