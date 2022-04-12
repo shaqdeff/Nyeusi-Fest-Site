@@ -123,11 +123,11 @@ body {
   color: var(--primary-color);
   font-size: 1.35rem;
   padding-right: 4rem;
+  transition: 0.5s;
 }
 
 .nav-items li a:hover {
   color: var(--accent-color);
-  transition: 0.5s;
 }
 
 .btn {
@@ -158,13 +158,13 @@ body {
 .welcome-page {
   display: flex;
   height: 100vh;
-  background: rgb(255, 255, 255);
+  background: rgb(211, 211, 211);
   background: linear-gradient(
-      145deg,
-      rgba(255, 255, 255, 0.88) 50%,
-      rgba(211, 211, 211, 0.9) 70%
+      45deg,
+      rgba(211, 211, 211, 0.9) 65%,
+      rgba(255, 255, 255, 0.9) 95%
     ),
-    url(../images/concert-lights.jpg);
+    url(../images/festival.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -232,8 +232,9 @@ body {
   left: 20%;
   width: 35%;
   height: 12vh;
-  border: 1.7px solid var(--body-color);
-  background: #d3d3d387;
+  border: 1.5px solid var(--body-color);
+  border-radius: 5px;
+  background: #d3d3d37a;
   padding: 1rem;
   text-align: left;
 }
@@ -276,6 +277,119 @@ body {
   font-weight: 600;
   font-size: 1.5rem;
   color: #272a31ba;
+}
+
+/* Schedule Section */
+.schedule-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 85vh;
+  background: rgb(39, 42, 49);
+  background: linear-gradient(
+      145deg,
+      rgba(39, 42, 49, 0.9) 80%,
+      rgba(99, 94, 94, 0.3) 100%
+    ),
+    url(../images/geometric-pattern.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+.schedule-title {
+  color: var(--body-color);
+  position: absolute;
+  top: 7.5%;
+  font-size: 2.4rem;
+}
+
+.solid {
+  width: 32px;
+  height: 0.5px;
+  background-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  position: absolute;
+  top: 14%;
+}
+
+.schedule-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 220px;
+  width: 200px;
+  /* border: 3px solid var(--mobile-secondary-color); */
+  margin-top: 15rem;
+  margin-bottom: 18rem;
+  position: relative;
+  background: #3f4147b4;
+}
+
+.fa-ticket {
+  position: absolute;
+  color: var(--secondary-color);
+  font-size: 3rem;
+  left: 41.5%;
+  top: 7%;
+}
+
+.fa-torii-gate {
+  position: absolute;
+  color: var(--secondary-color);
+  font-size: 3rem;
+  left: 41.5%;
+  top: 7%;
+}
+
+.fa-sun {
+  position: absolute;
+  color: var(--secondary-color);
+  font-size: 3rem;
+  left: 41.5%;
+  top: 7%;
+}
+
+.fa-volume-up {
+  position: absolute;
+  color: var(--secondary-color);
+  font-size: 3rem;
+  left: 41.5%;
+  top: 7%;
+}
+
+.card-title {
+  position: absolute;
+  top: 20%;
+  font-size: 1.5rem;
+  color: var(--accent-color);
+}
+
+.card-description {
+  color: var(--secondary-color);
+  padding: 0.5rem;
+  line-height: 1.4rem;
+  position: absolute;
+  top: 35%;
+  font-size: 1.1rem;
+}
+
+.whole-schedule {
+  position: absolute;
+  top: 80%;
+  color: var(--body-color);
+  font-size: 1.3rem;
+  transition: 0.5s;
+}
+
+.whole-schedule:hover {
+  color: var(--accent-color);
+}
+
+.btn-schedule {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -352,14 +466,51 @@ body {
 
   /* Welcome Page */
   .text-box {
-    top: 33%;
+    position: relative;
+    top: 43%;
     left: 6%;
+  }
+
+  .text-box h1 {
+    position: absolute;
+    top: -17rem;
+    width: 90%;
+  }
+
+  .text-box p {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 5.5rem;
+    letter-spacing: 1.5px;
+    position: absolute;
+    bottom: -2rem;
+    margin-bottom: 0;
+    background-image: url(../images/concert-lights.jpg);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 50px;
+  }
+
+  .year-text {
+    font-family: var(--alternate-font);
+    font-weight: 800;
+    font-size: 4.5rem;
+    position: absolute;
+    top: 10.5rem;
+    margin-bottom: 0;
+    background-image: url(../images/concert-lights.jpg);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .subtext {
     width: 90%;
-    top: 69%;
-    left: 5%;
+    top: 70%;
+    left: 6%;
     text-align: center;
   }
 
@@ -367,7 +518,7 @@ body {
     max-width: 100%;
     white-space: nowrap;
     left: 3.5%;
-    top: 80%;
+    top: 82%;
     font-size: 1.5rem;
   }
 
@@ -377,5 +528,110 @@ body {
     left: 3.5%;
     top: 85%;
     font-size: 1.5rem;
+  }
+
+  /* Schedule Section */
+  .schedule-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 90vh;
+  }
+
+  .schedule-title {
+    color: var(--body-color);
+    position: absolute;
+    top: 3.5%;
+    font-size: 2rem;
+  }
+
+  .solid {
+    width: 32px;
+    height: 0.5px;
+    background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    position: absolute;
+    top: 8%;
+  }
+
+  .schedule-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 15vh;
+    width: 95vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    top: 3%;
+    background: #3f4147b4;
+    padding-left: 2rem;
+  }
+
+  .fa-ticket {
+    position: relative;
+    font-size: 2rem;
+    left: 0.5%;
+    top: 1%;
+  }
+
+  .fa-torii-gate {
+    position: relative;
+    font-size: 2rem;
+    left: 0.5%;
+    top: 1%;
+  }
+
+  .fa-sun {
+    position: relative;
+    font-size: 2rem;
+    left: 0.5%;
+    top: 1%;
+  }
+
+  .fa-volume-up {
+    position: relative;
+    font-size: 2rem;
+    left: 0.5%;
+    top: 1%;
+  }
+
+  .card-title {
+    position: relative;
+    top: 0;
+    color: var(--accent-color);
+    text-align: left;
+    font-size: 1.1rem;
+  }
+
+  .card-description {
+    position: relative;
+    color: var(--secondary-color);
+    text-align: left;
+    margin: 1.2rem;
+    top: 0;
+  }
+
+  .whole-schedule {
+    display: none;
+  }
+
+  .btn-schedule {
+    display: block;
+    width: 40%;
+    background: var(--accent-color);
+    border: none;
+    color: var(--body-color);
+    outline: none;
+    position: relative;
+    left: 0;
+    top: 4%;
+  }
+
+  .btn-schedule:active {
+    background: var(--mobile-secondary-color);
   }
 }
