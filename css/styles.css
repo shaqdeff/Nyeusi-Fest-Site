@@ -1,6 +1,8 @@
 /* Typography */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@200;300;400;500;600;700;800;900&display=swap");
+
 @font-face {
   font-family: "cocogoose";
   src: url("fonts/cocogoose/cocogoose_pro_light-trial-webfont.woff2")
@@ -27,7 +29,6 @@
   font-weight: 700;
   font-style: normal;
 }
-
 /* Variables */
 :root {
   --primary-color: #272a31;
@@ -36,6 +37,7 @@
   --body-color: #fff;
   --mobile-secondary-color: #d4d4d4;
   --heading-font: "cocogoose";
+  --alternate-font: "Spartan", sans-serif;
 }
 
 /* Reset Styles */
@@ -55,12 +57,16 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+/* Header/Navigation Bar */
 .page-info {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   background: var(--primary-color);
   height: 5vh;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
 }
 
 .fa {
@@ -84,16 +90,20 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 10vh;
-  max-width: 100%;
+  width: 100%;
+  background: var(--body-color);
+  position: fixed;
+  z-index: 2;
+  margin-top: 2.8rem;
 }
 
 .nav-logo {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   position: relative;
-  margin-top: 1.5rem;
+  margin-top: 0.3rem;
   left: 2rem;
-  z-index: -10;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -144,9 +154,141 @@ body {
   display: none;
 }
 
+/* Welcome Page */
+.welcome-page {
+  display: flex;
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.88) 50%,
+      rgba(211, 211, 211, 0.9) 70%
+    ),
+    url(../images/concert-lights.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 43%;
+  left: 20%;
+  width: 50%;
+  height: 10vh;
+}
+
+.text-box h1 {
+  font-family: var(--heading-font);
+  font-weight: 100;
+  font-size: 1.8rem;
+  color: var(--accent-color);
+  position: relative;
+  top: 6.5rem;
+}
+
+.text-box p {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-size: 5.5rem;
+  letter-spacing: 1.5px;
+  position: relative;
+  bottom: -1rem;
+  margin-bottom: 0;
+  background-image: url(../images/concert-lights.jpg);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 50px;
+}
+
+.year-text {
+  font-family: var(--alternate-font);
+  font-weight: 800;
+  font-size: 4.5rem;
+  position: relative;
+  top: -4.8rem;
+  margin-bottom: 0;
+  background-image: url(../images/concert-lights.jpg);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 72%;
+  left: 20%;
+  width: 35%;
+  height: 12vh;
+  border: 1.7px solid var(--body-color);
+  background: #d3d3d387;
+  padding: 1rem;
+  text-align: left;
+}
+
+.subtext p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-family: var(--alternate-font);
+  color: #272a31d6;
+}
+
+.date-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 83%;
+  left: 19.2%;
+  padding: 1rem;
+  text-align: left;
+  max-width: 40%;
+  font-family: var(--alternate-font);
+  font-weight: 800;
+  font-size: 1.8rem;
+  color: #272a31ba;
+}
+
+.location-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 88%;
+  left: 19%;
+  padding: 1rem;
+  text-align: left;
+  max-width: 40%;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #272a31ba;
+}
+
 @media screen and (max-width: 768px) {
+  /* Header/Navigation Bar */
   .page-info {
     display: none;
+  }
+
+  .nav-bar {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    margin-top: 0;
   }
 
   .nav-logo {
@@ -160,9 +302,9 @@ body {
     background: rgba(236, 82, 66, 0.8);
     backdrop-filter: blur(5px);
     height: 100vh;
-    width: 200px;
+    width: 250px;
     top: 0;
-    left: -200px;
+    left: -250px;
     text-align: left;
     z-index: 2;
     transition: 1s;
@@ -206,5 +348,34 @@ body {
     position: relative;
     right: 28rem;
     cursor: pointer;
+  }
+
+  /* Welcome Page */
+  .text-box {
+    top: 33%;
+    left: 6%;
+  }
+
+  .subtext {
+    width: 90%;
+    top: 69%;
+    left: 5%;
+    text-align: center;
+  }
+
+  .date-text {
+    max-width: 100%;
+    white-space: nowrap;
+    left: 3.5%;
+    top: 80%;
+    font-size: 1.5rem;
+  }
+
+  .location-text {
+    max-width: 100%;
+    white-space: nowrap;
+    left: 3.5%;
+    top: 85%;
+    font-size: 1.5rem;
   }
 }
