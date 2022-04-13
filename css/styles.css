@@ -846,10 +846,22 @@ body {
 
   .btn-collapse {
     display: block;
-    width: 80vw;
+    width: 80%;
     color: var(--primary-color);
     margin-top: -3rem;
     margin-bottom: -5rem;
+  }
+
+  .active .btn-collapse:hover {
+    color: var(--secondary-color);
+  }
+
+  .fa-angle-down:hover {
+    color: var(--secondary-color);
+  }
+
+  .btn-collapse:active {
+    background: var(--accent-color);
   }
 
   .fa-angle-down {
@@ -857,8 +869,8 @@ body {
     margin-left: 0.5rem;
   }
 
-  .btn-collapse:active {
-    background: var(--accent-color);
-    color: var(--secondary-color);
+  .collapse {
+    display: none;
+    overflow: hidden;
   }
 }
