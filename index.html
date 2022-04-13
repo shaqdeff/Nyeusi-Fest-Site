@@ -6,8 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nyeusi Music Festival</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/eb57cf8ccf.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <script src="script.js"></script>
+    <header>
+      <div class="page-info">
+        <i class="fa fa-facebook-f"></i>
+        <i class="fa fa-twitter"></i>
+        <span class="info-label">English</span>
+        <span class="info-label">My Page</span>
+        <span class="info-label">Logout</span>
+      </div>
+      <div class="nav-bar">
+        <a href="#"
+          ><img
+            src="images/nyeusi-logo.jpeg"
+            alt="Nyeusi Music Festival"
+            class="nav-logo"
+        /></a>
+        <nav>
+          <div class="nav-links" id="navLinks">
+            <i class="fas fa-times" id="closeIcon"></i>
+            <ul class="nav-items" id="navItems">
+              <li><a href="#about">About</a></li>
+              <li><a href="#schedule">Schedule</a></li>
+              <li><a href="#community">Community</a></li>
+              <li><a href="#sponsor">Sponsor</a></li>
+              <li><a href="#blog">Blog</a></li>
+            </ul>
+            <button class="btn" type="button">Buy Tickets</button>
+          </div>
+        </nav>
+        <i class="fas fa-bars" id="menuBar"></i>
+      </div>
+    </header>
+    <script src="javascript/menu.js"></script>
   </body>
 </html>
