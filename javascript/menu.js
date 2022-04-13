@@ -4,13 +4,13 @@ const hideMenu = document.getElementById('closeIcon');
 const closeMenu = document.getElementById('navItems');
 
 showMenu.onclick = function showMenu() {
- navLinks.style.left = '0';
+  navLinks.style.left = '0';
 };
 
 hideMenu.onclick = function hideMenu() {
- navLinks.style.left = '-250px';
+  navLinks.style.left = '-250px';
 };
 
 closeMenu.onclick = function hideMenu() {
- navLinks.style.left = '-250px';
+  navLinks.style.left = '-250px';
 };

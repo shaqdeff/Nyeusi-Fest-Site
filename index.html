@@ -47,34 +47,35 @@
 
     <!-- Welcome Page -->
     <section class="welcome-page">
-      <article class="text-box">
-        <h1>"Experience movement, music & love."</h1>
-        <p>
-          NYEUSI <br />
-          MUSIC FESTIVAL
-        </p>
-        <p></p>
-        <span class="year-text">2022</span>
-      </article>
-      <div class="subtext">
-        <p>
-          Here to create moments that last a lifetime. Good music, amazing
-          energy, and beautiful people to uplift your soul.
-        </p>
-      </div>
-      <div class="date-text">
-        <p>2022.08.12(FRI) ~ 2022.08.14(SUN)</p>
-      </div>
-      <div class="location-text">
-        <p>@Oasis Park. Nairobi, Kenya.</p>
+      <div class="welcome-container">
+        <article class="text-box">
+          <h1>"Experience movement, music & love."</h1>
+          <p>
+            NYEUSI <br />
+            MUSIC FESTIVAL
+          </p>
+          <span class="year-text">2022</span>
+        </article>
+        <div class="subtext">
+          <p>
+            Here to create moments that last a lifetime. Good music, amazing
+            energy, and beautiful people to uplift your soul.
+          </p>
+        </div>
+        <div class="date-text">
+          <p>2022.08.12(FRI) ~ 2022.08.14(SUN)</p>
+        </div>
+        <div class="location-text">
+          <p>@Oasis Park. Nairobi, Kenya.</p>
+        </div>
       </div>
     </section>
 
     <!-- Schedule Section -->
-    <section>
-      <div class="schedule-section">
-        <span class="schedule-title">Schedule</span>
-        <hr class="solid" />
+    <section class="schedule-section">
+      <span class="schedule-title">Schedule</span>
+      <hr class="solid" />
+      <div class="schedule-container">
         <article class="schedule-card">
           <i class="fa fa-ticket"></i>
           <h3 class="card-title">Ticket Registration</h3>
@@ -114,10 +115,23 @@
             full of bliss and make beautiful memories with us.
           </p>
         </article>
-        <a href="" class="whole-schedule">SEE THE WHOLE SCHEDULE</a>
-        <button class="btn btn-schedule">Get Your Ticket</button>
       </div>
+      <a href="" class="whole-schedule">SEE THE WHOLE SCHEDULE</a>
+      <button class="btn btn-schedule">Get Your Ticket</button>
     </section>
+
+    <!-- Featured Speakers -->
+    <div id="featureActs" class="featured-acts">
+      <span class="featured-title">Featured Acts</span>
+      <hr class="featured-solid" />
+      <div id="actContainer" class="acts-container"></div>
+      <button type="button" id="collapse" class="btn btn-collapse">
+        <span id="expand">More<i class="fas fa-angle-down"></i></span>
+        <span id="exit" class="hide">Less<i class="fas fa-angle-up"></i></span>
+      </button>
+    </div>
+    <script src="javascript/acts.js"></script>
     <script src="javascript/menu.js"></script>
+    <!-- <script src="javascript/collapse.js"></script> -->
   </body>
 </html>
