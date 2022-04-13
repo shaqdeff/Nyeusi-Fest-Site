@@ -5,30 +5,25 @@
 
 @font-face {
   font-family: "cocogoose";
-  src: url("fonts/cocogoose/cocogoose_pro_light-trial-webfont.woff2")
-      format("woff2"),
-    url("fonts/cocogoose/cocogoose_pro_light-trial-webfont.woff") format("woff");
+  src: url("fonts/cocogoose/cocogoose_pro_light-trial-webfont.woff2") format("woff2"), url("fonts/cocogoose/cocogoose_pro_light-trial-webfont.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "cocogoose";
-  src: url("fonts/cocogoose/cocogoose_pro_semilight-trial-webfont.woff2")
-      format("woff2"),
-    url("fonts/cocogoose/cocogoose_pro_semilight-trial-webfont.woff")
-      format("woff");
+  src: url("fonts/cocogoose/cocogoose_pro_semilight-trial-webfont.woff2") format("woff2"), url("fonts/cocogoose/cocogoose_pro_semilight-trial-webfont.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "cocogoose";
-  src: url("fonts/cocogoose/cocogoose_pro-trial-webfont.woff2") format("woff2"),
-    url("fonts/cocogoose/cocogoose_pro-trial-webfont.woff") format("woff");
+  src: url("fonts/cocogoose/cocogoose_pro-trial-webfont.woff2") format("woff2"), url("fonts/cocogoose/cocogoose_pro-trial-webfont.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
+
 /* Variables */
 :root {
   --primary-color: #272a31;
@@ -165,16 +160,11 @@ body {
 .welcome-page {
   height: 100vh;
   background: rgb(211, 211, 211);
-  background: linear-gradient(
-      45deg,
-      rgba(211, 211, 211, 0.9) 65%,
-      rgba(255, 255, 255, 0.9) 95%
-    ),
-    url(../images/festival.jpg);
+  background: linear-gradient(45deg, rgba(211, 211, 211, 0.9) 65%, rgba(255, 255, 255, 0.9) 95%), url(../images/festival.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
-  padding-top: 9rem;
+  padding-top: 7rem;
 }
 
 .welcome-container {
@@ -264,12 +254,7 @@ body {
 /* Schedule Section */
 .schedule-section {
   background: rgb(39, 42, 49);
-  background: linear-gradient(
-      145deg,
-      rgba(39, 42, 49, 0.9) 80%,
-      rgba(99, 94, 94, 0.3) 100%
-    ),
-    url(../images/geometric-pattern.jpg);
+  background: linear-gradient(145deg, rgba(39, 42, 49, 0.9) 80%, rgba(99, 94, 94, 0.3) 100%), url(../images/geometric-pattern.jpg);
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -442,6 +427,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+
   /* Header/Navigation Bar */
   .page-info {
     display: none;
