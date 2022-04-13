@@ -1,6 +1,5 @@
 /* Typography */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@200;300;400;500;600;700;800;900&display=swap");
 
 @font-face {
@@ -427,7 +426,6 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-
   /* Header/Navigation Bar */
   .page-info {
     display: none;
@@ -627,17 +625,17 @@ body {
     color: var(--secondary-color);
   }
 
+  .fa-angle-down {
+    color: inherit;
+    margin-left: 0.5rem;
+  }
+
   .fa-angle-down:hover {
     color: var(--secondary-color);
   }
 
   .btn-collapse:active {
     background: var(--accent-color);
-  }
-
-  .fa-angle-down {
-    color: inherit;
-    margin-left: 0.5rem;
   }
 
   .fa-angle-up {
