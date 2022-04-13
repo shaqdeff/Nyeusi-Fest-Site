@@ -44,6 +44,8 @@
 *,
 *::after,
 *::before {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -52,8 +54,6 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: "Lato", sans-serif;
 }
 
@@ -63,13 +63,22 @@ body {
   justify-content: flex-end;
   align-items: center;
   background: var(--primary-color);
-  height: 5vh;
+  height: 30px;
   position: fixed;
   width: 100%;
   z-index: 5;
+  top: 0;
 }
 
-.fa {
+.fa-facebook-f {
+  color: var(--body-color);
+  font-size: 1.4rem;
+  padding-right: 1.5rem;
+  position: relative;
+  right: 20rem;
+}
+
+.fa-twitter {
   color: var(--body-color);
   font-size: 1.4rem;
   padding-right: 1.5rem;
@@ -78,7 +87,7 @@ body {
 }
 
 .info-label {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--body-color);
   padding-right: 1.5rem;
   position: relative;
@@ -89,12 +98,13 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 10vh;
+  height: 60px;
   width: 100%;
   background: var(--body-color);
   position: fixed;
-  z-index: 2;
-  margin-top: 2.8rem;
+  z-index: 20;
+  top: 2.8rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
 .nav-logo {
@@ -108,9 +118,8 @@ body {
 
 .nav-links {
   text-align: center;
-  position: relative;
   display: flex;
-  right: 7.5rem;
+  align-items: center;
 }
 
 .nav-items {
@@ -131,8 +140,6 @@ body {
 }
 
 .btn {
-  position: relative;
-  left: 3.5rem;
   border: 4px solid var(--accent-color);
   outline: none;
   background: transparent;
@@ -156,7 +163,6 @@ body {
 
 /* Welcome Page */
 .welcome-page {
-  display: flex;
   height: 100vh;
   background: rgb(211, 211, 211);
   background: linear-gradient(
@@ -168,52 +174,49 @@ body {
   background-position: center;
   background-size: cover;
   position: relative;
+  padding-top: 9rem;
+}
+
+.welcome-container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 1.6rem;
+  width: 100%;
 }
 
 .text-box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
-  position: absolute;
-  transform: translateY(-50%);
-  top: 43%;
-  left: 20%;
-  width: 50%;
-  height: 10vh;
+  margin-top: 8%;
 }
 
 .text-box h1 {
   font-family: var(--heading-font);
   font-weight: 100;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   color: var(--accent-color);
-  position: relative;
-  top: 6.5rem;
+  margin-bottom: 2rem;
 }
 
 .text-box p {
   font-family: var(--heading-font);
   font-weight: 700;
-  font-size: 5.5rem;
+  font-size: 7rem;
   letter-spacing: 1.5px;
-  position: relative;
-  bottom: -1rem;
   margin-bottom: 0;
   background-image: url(../images/festival.jpg);
   background-size: 100%;
   background-repeat: repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  line-height: 50px;
+  line-height: 0.95;
 }
 
 .year-text {
   font-family: var(--alternate-font);
   font-weight: 800;
-  font-size: 4.5rem;
-  position: relative;
-  top: -48px;
+  font-size: 6rem;
   margin-bottom: 0;
   background-image: url(../images/festival.jpg);
   background-size: 100%;
@@ -226,66 +229,40 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  transform: translateY(-50%);
-  top: 72%;
-  left: 20%;
-  width: 35%;
+  width: 50%;
   height: 12vh;
   border: 1.5px solid var(--body-color);
   border-radius: 5px;
   background: #d3d3d37a;
   padding: 1rem;
   text-align: left;
+  margin-top: 2rem;
 }
 
 .subtext p {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 500;
   font-family: var(--alternate-font);
   color: #272a31d6;
 }
 
 .date-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  transform: translateY(-50%);
-  top: 83%;
-  left: 19.2%;
-  padding: 1rem;
-  text-align: left;
-  max-width: 40%;
   font-family: var(--alternate-font);
   font-weight: 800;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #272a31ba;
+  margin: 2rem 0;
 }
 
 .location-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  transform: translateY(-50%);
-  top: 88%;
-  left: 19%;
-  padding: 1rem;
-  text-align: left;
-  max-width: 40%;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #272a31ba;
+  margin-top: 1rem;
 }
 
 /* Schedule Section */
 .schedule-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  height: 85vh;
   background: rgb(39, 42, 49);
   background: linear-gradient(
       145deg,
@@ -295,92 +272,69 @@ body {
     url(../images/geometric-pattern.jpg);
   background-position: center;
   background-size: cover;
-  position: relative;
   text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.schedule-container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 1.6rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.6rem;
 }
 
 .schedule-title {
   color: var(--body-color);
-  position: absolute;
-  top: 7.5%;
   font-size: 2.4rem;
+  margin: 0 auto;
 }
 
 .solid {
+  margin: 0.8rem auto 4rem auto;
   width: 32px;
   height: 0.5px;
   background-color: var(--accent-color);
   border: 1px solid var(--accent-color);
-  position: absolute;
-  top: 14%;
 }
 
 .schedule-card {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 220px;
-  width: 200px;
-  margin-top: 15rem;
-  margin-bottom: 18rem;
-  position: relative;
+  flex-direction: column;
+  padding: 1.6rem;
   background: #3f4147b4;
 }
 
-.fa-ticket {
-  position: absolute;
-  color: var(--secondary-color);
-  font-size: 3rem;
-  left: 41.5%;
-  top: 7%;
-}
-
-.fa-torii-gate {
-  position: absolute;
-  color: var(--secondary-color);
-  font-size: 3rem;
-  left: 41.5%;
-  top: 7%;
-}
-
-.fa-sun {
-  position: absolute;
-  color: var(--secondary-color);
-  font-size: 3rem;
-  left: 41.5%;
-  top: 7%;
-}
-
+.fa-ticket,
+.fa-torii-gate,
+.fa-sun,
 .fa-volume-up {
-  position: absolute;
   color: var(--secondary-color);
   font-size: 3rem;
-  left: 41.5%;
-  top: 7%;
 }
 
 .card-title {
-  position: absolute;
-  top: 20%;
-  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.7rem;
   color: var(--accent-color);
 }
 
 .card-description {
   color: var(--secondary-color);
   padding: 0.5rem;
-  line-height: 1.4rem;
-  position: absolute;
-  top: 35%;
-  font-size: 1.1rem;
+  line-height: 1.1;
+  font-size: 1.4rem;
 }
 
 .whole-schedule {
-  position: absolute;
-  top: 80%;
+  display: block;
   color: var(--body-color);
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   transition: 0.5s;
+  margin: 2rem auto;
 }
 
 .whole-schedule:hover {
@@ -393,17 +347,15 @@ body {
 
 /* Featured Acts */
 .featured-acts {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90vh;
-  position: relative;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 5rem 1.6rem;
+  text-align: center;
 }
 
 .featured-title {
   color: var(--primary-color);
-  position: absolute;
-  top: 7.5%;
+  margin: 0 auto;
   font-size: 2.4rem;
 }
 
@@ -412,67 +364,59 @@ body {
   height: 0.5px;
   background-color: var(--accent-color);
   border: 1px solid var(--accent-color);
-  position: absolute;
-  top: 13.5%;
-  left: 48.2%;
+  margin: 0.8rem auto 3rem auto;
 }
 
 .acts-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  align-content: center;
-  width: 90vw;
-  position: absolute;
-  top: 20%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: left;
 }
 
 .act-card {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 50%;
-  margin: 0;
+  justify-content: center;
+  margin: 2rem 0;
 }
 
 .card-images {
-  width: 140px;
-  height: 120px;
+  width: 160px;
+  height: auto;
   position: relative;
 }
 
 .card-image1 {
   width: 100px;
   height: 100px;
-  position: absolute;
-  bottom: 0;
-  right: 10px;
   z-index: 5;
+  position: relative;
+  top: 10px;
+  bottom: 0;
+  left: 20px;
 }
 
 .card-image2 {
   width: 50px;
   height: 50px;
-  position: absolute;
-  top: 0;
-  left: 0;
   border-radius: 10px;
+  position: absolute;
+  left: -10px;
+  top: -10px;
 }
 
 .act-content {
-  width: 60%;
-  padding: 0.5rem;
-  position: relative;
+  padding: 0 3.5rem;
 }
 
 .content-title {
-  font-size: 2rem;
-  margin-bottom: -0.8rem;
+  font-size: 2.2rem;
+  color: #272a31c5;
+  margin-bottom: 0.7rem;
 }
 
 .content-subhead {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: var(--accent-color);
   font-style: italic;
   margin-bottom: 0.2rem;
@@ -483,20 +427,17 @@ body {
   height: 0.5px;
   background-color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
-  position: absolute;
+  margin: 1rem 0;
 }
 
 .content-description {
   color: var(--primary-color);
-  font-size: 1.2rem;
-  padding-top: 1rem;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  padding-top: 0.2rem;
 }
 
 .btn-collapse {
-  display: none;
-}
-
-.act-card.collapse {
   display: none;
 }
 
@@ -507,10 +448,13 @@ body {
   }
 
   .nav-bar {
+    display: flex;
     background: transparent;
     position: absolute;
     top: 0;
     margin-top: 0;
+    box-shadow: none;
+    justify-content: flex-start;
   }
 
   .nav-logo {
@@ -534,20 +478,26 @@ body {
 
   .nav-items {
     flex-direction: column;
+    padding-top: 7rem;
+    padding-left: 4rem;
     line-height: 5rem;
     letter-spacing: 3px;
   }
 
   .nav-items li a {
     color: var(--mobile-secondary-color);
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .btn {
+    display: flex;
+    justify-content: center;
     border: 3px solid var(--mobile-secondary-color);
     color: var(--mobile-secondary-color);
     max-width: 50%;
-    padding: 1rem;
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    white-space: nowrap;
   }
 
   .btn:hover {
@@ -558,6 +508,8 @@ body {
     display: block;
     color: var(--primary-color);
     margin: 1.5rem;
+    position: absolute;
+    left: -1rem;
     padding-left: 0.75rem;
     font-size: 2.2rem;
     cursor: pointer;
@@ -567,160 +519,83 @@ body {
     display: block;
     color: var(--primary-color);
     font-size: 2.8rem;
-    position: relative;
-    right: 28rem;
+    position: absolute;
+    left: 1rem;
     cursor: pointer;
   }
 
   /* Welcome Page */
-  .text-box {
-    position: relative;
-    top: 43%;
-    left: 6%;
+  .welcome-page {
+    padding-top: 7rem;
   }
 
   .text-box h1 {
-    position: absolute;
-    top: -17rem;
-    width: 90%;
+    font-size: 1.5rem;
   }
 
   .text-box p {
-    font-family: var(--heading-font);
-    font-weight: 700;
     font-size: 5.5rem;
-    letter-spacing: 1.5px;
-    position: absolute;
-    bottom: -2rem;
     margin-bottom: 0;
-    background-image: url(../images/festival.jpg);
-    background-size: 100%;
-    background-repeat: repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    line-height: 50px;
   }
 
   .year-text {
-    font-family: var(--alternate-font);
-    font-weight: 800;
     font-size: 4.5rem;
-    position: relative;
-    top: 9rem;
-    margin-bottom: 0;
-    background-image: url(../images/festival.jpg);
-    background-size: 100%;
-    background-repeat: repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 
   .subtext {
-    width: 90%;
-    top: 70%;
-    left: 6%;
+    width: 100%;
+    margin-top: 4rem;
     text-align: center;
   }
 
+  .subtext p {
+    font-size: 1.4rem;
+  }
+
   .date-text {
-    max-width: 100%;
-    white-space: nowrap;
-    left: 3.5%;
-    top: 82%;
     font-size: 1.5rem;
   }
 
   .location-text {
-    max-width: 100%;
-    white-space: nowrap;
-    left: 3.5%;
-    top: 85%;
     font-size: 1.5rem;
+    margin-top: -1rem;
   }
 
   /* Schedule Section */
   .schedule-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    height: 90vh;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
   }
 
-  .schedule-title {
-    color: var(--body-color);
-    position: absolute;
-    top: 3.5%;
-    font-size: 2rem;
-  }
-
-  .solid {
-    width: 32px;
-    height: 0.5px;
-    background-color: var(--accent-color);
-    border: 1px solid var(--accent-color);
-    position: absolute;
-    top: 8%;
+  .schedule-container {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
   }
 
   .schedule-card {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 2rem 5rem 1fr;
+    gap: 1.8rem;
     align-items: center;
-    height: 15vh;
-    width: 95vw;
-    margin-top: 0;
-    margin-bottom: 0;
-    position: relative;
-    top: 3%;
-    background: #3f4147b4;
-    padding-left: 2rem;
+    transition: all 0.8s ease-in-out;
   }
 
-  .fa-ticket {
-    position: relative;
-    font-size: 2rem;
-    left: 0.5%;
-    top: 1%;
-  }
-
-  .fa-torii-gate {
-    position: relative;
-    font-size: 2rem;
-    left: 0.5%;
-    top: 1%;
-  }
-
-  .fa-sun {
-    position: relative;
-    font-size: 2rem;
-    left: 0.5%;
-    top: 1%;
-  }
-
+  .fa-ticket,
+  .fa-torii-gate,
+  .fa-sun,
   .fa-volume-up {
-    position: relative;
     font-size: 2rem;
-    left: 0.5%;
-    top: 1%;
   }
 
   .card-title {
-    position: relative;
-    top: 0;
-    color: var(--accent-color);
     text-align: left;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    margin: 0;
   }
 
   .card-description {
-    position: relative;
-    color: var(--secondary-color);
     text-align: left;
-    margin: 1.2rem;
-    top: 0;
+    font-size: 1.1rem;
   }
 
   .whole-schedule {
@@ -729,14 +604,13 @@ body {
 
   .btn-schedule {
     display: block;
-    width: 40%;
     background: var(--accent-color);
     border: none;
     color: var(--body-color);
     outline: none;
-    position: relative;
-    left: 0;
-    top: 4%;
+    margin: 0 auto;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .btn-schedule:active {
@@ -744,118 +618,23 @@ body {
   }
 
   /* Featured Acts */
-  .featured-acts {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    position: relative;
-  }
-
-  .featured-title {
-    color: var(--primary-color);
-    position: absolute;
-    top: 7.5%;
-    font-size: 2.4rem;
-  }
-
-  .featured-solid {
-    width: 32px;
-    height: 0.5px;
-    background-color: var(--accent-color);
-    border: 1px solid var(--accent-color);
-    position: absolute;
-    top: 12%;
-    left: 45%;
-  }
 
   .acts-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: center;
-    width: 90vw;
-    gap: 14rem;
-    position: absolute;
-    top: 30%;
-    padding: 1rem;
-  }
-
-  .act-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 12vh;
-    margin: 0;
-  }
-
-  .card-images {
-    width: 140px;
-    height: 120px;
-    position: relative;
-  }
-
-  .card-image1 {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    bottom: 0;
-    right: 10px;
-    z-index: 5;
-  }
-
-  .card-image2 {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 10px;
-  }
-
-  .act-content {
-    width: 60%;
-    padding: 0.5rem;
-    position: relative;
-  }
-
-  .content-title {
-    font-size: 2rem;
-    margin-bottom: -0.8rem;
-  }
-
-  .content-subhead {
-    font-size: 1.2rem;
-    color: var(--accent-color);
-    font-style: italic;
-    margin-bottom: 0.2rem;
-  }
-
-  .content-solid {
-    width: 8%;
-    height: 0.5px;
-    background-color: var(--secondary-color);
-    border: 1px solid var(--secondary-color);
-    position: absolute;
-  }
-
-  .content-description {
-    color: var(--primary-color);
-    font-size: 1.2rem;
-    padding-top: 1rem;
+    grid-template-columns: 1fr;
   }
 
   .btn-collapse {
-    display: block;
-    width: 80%;
+    display: flex;
+    color: var(--accent-color);
+    margin: 0 auto;
+    padding-right: 6rem;
+    padding-left: 6rem;
+    column-gap: 1.5rem;
+    align-items: center;
+  }
+
+  .btn-collapse span {
     color: var(--primary-color);
-    margin-top: -5rem;
-    margin-bottom: -5rem;
-    margin-left: -10rem;
   }
 
   .btn-collapse:hover {
@@ -871,16 +650,20 @@ body {
   }
 
   .fa-angle-down {
-    color: var(--accent-color);
+    color: inherit;
+    margin-left: 0.5rem;
+  }
+
+  .fa-angle-up {
+    color: inherit;
     margin-left: 0.5rem;
   }
 
   .collapse {
     display: none;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 12vh;
-    margin: 0;
+  }
+
+  .hide {
+    display: none;
   }
 }
