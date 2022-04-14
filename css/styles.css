@@ -157,13 +157,13 @@ body {
 
 /* Welcome Page */
 .welcome-page {
-  height: 100vh;
   background: rgb(211, 211, 211);
   background: linear-gradient(45deg, rgba(211, 211, 211, 0.9) 65%, rgba(255, 255, 255, 0.9) 95%), url(../images/festival.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
   padding-top: 7rem;
+  padding-bottom: 3rem;
 }
 
 .welcome-container {
@@ -247,7 +247,7 @@ body {
   font-weight: 600;
   font-size: 1.8rem;
   color: #272a31ba;
-  margin-top: 1rem;
+  margin-top: -1rem;
 }
 
 /* Schedule Section */
@@ -423,6 +423,244 @@ body {
 
 .btn-collapse {
   display: none;
+}
+
+/* About Page */
+.about-page {
+  background: url(../images/main-bg.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+}
+
+.about-container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 1.6rem;
+  width: 100%;
+  position: relative;
+}
+
+.about-text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 7rem;
+}
+
+.about-text-box h1 {
+  font-family: var(--heading-font);
+  font-weight: 100;
+  font-size: 1.8rem;
+  color: var(--accent-color);
+  margin-bottom: 2rem;
+}
+
+.about-text-box h2 {
+  font-family: var(--alternate-font);
+  font-weight: 800;
+  font-size: 4.5rem;
+  color: var(--accent-color);
+}
+
+.about-subtext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+  border: 1.5px solid #d3d3d37a;
+  border-radius: 5px;
+  background: var(--body-color);
+  padding: 1.5rem;
+  text-align: left;
+  margin-top: -1rem;
+}
+
+.about-subtext-desk {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: var(--alternate-font);
+  color: #272a31d6;
+  line-height: 1.3;
+  margin: 2rem;
+}
+
+.about-subtext-mobile {
+  display: none;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reach-out {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.to-home {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  transition: 0.5s;
+  text-decoration: underline;
+}
+
+.to-home:hover {
+  color: var(--accent-color);
+}
+
+.email-add {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.email-add:hover {
+  color: var(--accent-color);
+}
+
+.about-logo {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 1.6rem;
+  width: 100%;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+.logo-container h2 {
+  margin: 0 auto 1rem auto;
+  font-size: 3rem;
+}
+
+.logo-container p {
+  margin: -1rem auto 0 auto;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.logo-image-container {
+  width: 800px;
+  height: 300px;
+  border: 2px solid var(--secondary-color);
+  margin: 4rem auto 3rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-image {
+  width: 450px;
+  height: 250px;
+  margin: 3rem auto 0 auto;
+  border: var(--secondary-color);
+}
+
+.solid2 {
+  margin: 0 auto;
+  width: 100vw;
+  background-color: rgba(204, 198, 198, 0.66);
+}
+
+.see-past {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 1.6rem;
+  width: 100%;
+}
+
+.see-past-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 4rem;
+}
+
+.past-heading {
+  margin: 0 auto 1rem auto;
+  font-size: 3rem;
+}
+
+.past-text {
+  margin: -1rem auto 0 auto;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.about-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.past-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.past-img {
+  width: 450px;
+  height: 280px;
+}
+
+.layer {
+  background: #e53f2d95;
+  height: 280px;
+  width: 450px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  top: 0;
+  left: 0%;
+}
+
+.layer h2 {
+  color: var(--body-color);
+  font-size: 3.5rem;
+}
+
+.layer p {
+  color: var(--body-color);
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+/* Footer Section */
+.footer-section {
+  background: var(--primary-color);
+}
+
+.footer-container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 1.6rem;
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -649,5 +887,98 @@ body {
 
   .hide {
     display: none;
+  }
+
+  /* About Section */
+  .about-page {
+    padding-top: 4rem;
+  }
+
+  .about-text-box h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-text-box h2 {
+    font-size: 4rem;
+  }
+
+  .about-subtext {
+    display: flex;
+    height: 30vh;
+  }
+
+  .about-subtext-desk {
+    display: none;
+  }
+
+  .about-subtext-mobile {
+    display: block;
+    font-size: 1.4rem;
+    height: 5vh;
+    padding-bottom: 15rem;
+    font-weight: 400;
+  }
+
+  .logo-container h2 {
+    font-size: 2.2rem;
+  }
+
+  .logo-container p {
+    font-size: 1.4rem;
+  }
+
+  .logo-image-container {
+    width: 320px;
+    height: 300px;
+  }
+
+  .logo-image {
+    width: 300px;
+    height: 170px;
+  }
+
+  .past-heading {
+    font-size: 1.85rem;
+  }
+
+  .past-text {
+    font-size: 1.4rem;
+  }
+
+  .about-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .past-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    position: relative;
+  }
+
+  .past-img {
+    width: 350px;
+    height: 250px;
+  }
+
+  .layer {
+    height: 250px;
+    width: 350px;
+  }
+
+  .layer h2 {
+    color: var(--body-color);
+    font-size: 3.5rem;
+  }
+
+  .layer p {
+    margin: 0.5rem 0 1.5rem 0;
+    padding: 1rem;
+    text-align: center;
   }
 }
