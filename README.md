@@ -50,6 +50,8 @@ Contributions, issues, and feature requests are welcome!
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-
 - Original design idea by [Cindy Shin](https://www.behance.net/adagio07) in Behance.
 - Background photo by [Nick Kane](https://unsplash.com/@nickkane) on [Unsplash](https://unsplash.com/photos/NMx_9N2QC5o).
+- Lagos background Photo by [Samantha Gades](https://unsplash.com/@srosinger3997?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/fIHozNWfcvs).  
+- Johannesburg background Photo by [Kate Trysh](https://unsplash.com/@katetrysh?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/E5xQlNnngO0).
+  
