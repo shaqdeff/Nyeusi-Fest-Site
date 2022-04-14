@@ -769,25 +769,6 @@ body {
   margin-top: -5rem;
 }
 
-.heineken-logo {
-  width: 20vw;
-}
-
-.cocacola-logo {
-  width: 11vw;
-  margin-left: 1.2rem;
-}
-
-.samsung-logo {
-  width: 13vw;
-  margin-left: 1.5rem;
-}
-
-.spotify-logo {
-  width: 11.5vw;
-  margin-left: 2rem;
-}
-
 .about-footer-section {
   background: var(--primary-color);
 }
@@ -819,13 +800,9 @@ body {
   color: var(--secondary-color);
 }
 
-.fa-registered {
-  font-size: 1.1rem;
-}
 
 
 @media screen and (max-width: 768px) {
-
   /* Header/Navigation Bar */
   .page-info {
     display: none;
@@ -1204,22 +1181,6 @@ body {
     margin-top: 1rem;
   }
 
-  .heineken-logo {
-    width: 50vw;
-  }
-
-  .cocacola-logo {
-    width: 30vw;
-  }
-
-  .samsung-logo {
-    width: 35vw;
-  }
-
-  .spotify-logo {
-    width: 32vw;
-  }
-
   .about-footer-section {
     background: var(--secondary-color);
     padding-bottom: 1rem;
@@ -1244,9 +1205,5 @@ body {
   .about-footer-text {
     font-size: 1.1rem;
     color: var(--primary-color);
-  }
-
-  .fa-registered {
-    font-size: 1.1rem;
   }
 }
