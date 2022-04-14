@@ -1,6 +1,15 @@
-# Concert-Website
+# Nyeusi Music Festival Site
 
-This is a concert website with a home and about page.
+This is a demo concert website for a music festival called Nyeusi. It has a home page that highlights:
+
+- A header with a logo and navigation bar.
+- An introduction page.
+- Schedule section.
+- Featured acts section.
+- Partners section.
+- Page footer.
+
+The site also has an about page, and is responsive to different screen sizes.
 
 ## Built With
 
@@ -21,16 +30,16 @@ To get a local copy up and running follow these simple steps.
 ### Setup
 
 - With git, clone the code to your machine, or download a ZIP of all the files directly.
-- [Download the ZIP file from this location](https://github.com/shaqdeff/Concert-Website/archive/refs/heads/main.zip) or run the following [git](https://git-scm.com/) command to clone the files to your machine:
+- [Download the ZIP file from this location](https://github.com/shaqdeff/Nyeusi-Fest-Site/archive/refs/heads/main.zip) or run the following [git](https://git-scm.com/) command to clone the files to your machine:
 
 ```
-git clone https://github.com/shaqdeff/Concert-Website.git
+git clone https://github.com/shaqdeff/Nyeusi-Fest-Site.git
 ```
 
 - Once the files are on your machine, open the **Concert-Website** folder in [Visual Studio Code](https://code.visualstudio.com/download).
 
 ## Live Demo
-- See [Live Demo](https://shaqdeff.github.io/Concert-Website/).
+- See [Live Demo](https://shaqdeff.github.io/Nyeusi-Fest-Site/).
 
 ## Deployment
 
