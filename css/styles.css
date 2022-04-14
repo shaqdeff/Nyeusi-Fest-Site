@@ -3,21 +3,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@200;300;400;500;600;700;800;900&display=swap");
 
 @font-face {
-  font-family: cocogoose;
+  font-family: "cocogoose";
   src: url("fonts/cocogoose/cocogoose_pro_light-trial-webfont.woff2") format("woff2"), url("fonts/cocogoose/cocogoose_pro_light-trial-webfont.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: cocogoose;
+  font-family: "cocogoose";
   src: url("fonts/cocogoose/cocogoose_pro_semilight-trial-webfont.woff2") format("woff2"), url("fonts/cocogoose/cocogoose_pro_semilight-trial-webfont.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: cocogoose;
+  font-family: "cocogoose";
   src: url("fonts/cocogoose/cocogoose_pro-trial-webfont.woff2") format("woff2"), url("fonts/cocogoose/cocogoose_pro-trial-webfont.woff") format("woff");
   font-weight: 700;
   font-style: normal;
@@ -48,7 +48,7 @@ html {
 }
 
 body {
-  font-family: Lato, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 /* Header/Navigation Bar */
@@ -98,7 +98,7 @@ body {
   position: fixed;
   z-index: 20;
   top: 2.8rem;
-  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
 .nav-logo {
@@ -157,8 +157,8 @@ body {
 
 /* Welcome Page */
 .welcome-page {
-  background: rgb(211 211 211);
-  background: linear-gradient(45deg, rgb(211 211 211 / 90%) 65%, rgb(255 255 255 / 90%) 95%), url(../images/festival.jpg);
+  background: rgb(211, 211, 211);
+  background: linear-gradient(45deg, rgba(211, 211, 211, 0.9) 65%, rgba(255, 255, 255, 0.9) 95%), url(../images/festival.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -197,7 +197,7 @@ body {
   background-image: url(../images/festival.jpg);
   background-size: 100%;
   background-repeat: repeat;
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 0.95;
 }
@@ -210,7 +210,7 @@ body {
   background-image: url(../images/festival.jpg);
   background-size: 100%;
   background-repeat: repeat;
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -252,8 +252,8 @@ body {
 
 /* Schedule Section */
 .schedule-section {
-  background: rgb(39 42 49);
-  background: linear-gradient(145deg, rgb(39 42 49 / 90%) 80%, rgb(99 94 94 / 30%) 100%), url(../images/geometric-pattern.jpg);
+  background: rgb(39, 42, 49);
+  background: linear-gradient(145deg, rgba(39, 42, 49, 0.9) 80%, rgba(99, 94, 94, 0.3) 100%), url(../images/geometric-pattern.jpg);
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -277,7 +277,7 @@ body {
 }
 
 .solid {
-  margin: 0.8rem auto 4rem;
+  margin: 0.8rem auto 4rem auto;
   width: 32px;
   height: 0.5px;
   background-color: var(--accent-color);
@@ -348,7 +348,7 @@ body {
   height: 0.5px;
   background-color: var(--accent-color);
   border: 1px solid var(--accent-color);
-  margin: 0.8rem auto 3rem;
+  margin: 0.8rem auto 3rem auto;
 }
 
 .acts-container {
@@ -547,12 +547,12 @@ body {
 }
 
 .logo-container h2 {
-  margin: 0 auto 1rem;
+  margin: 0 auto 1rem auto;
   font-size: 3rem;
 }
 
 .logo-container p {
-  margin: -1rem auto 0;
+  margin: -1rem auto 0 auto;
   text-align: center;
   font-size: 1.5rem;
 }
@@ -561,7 +561,7 @@ body {
   width: 800px;
   height: 300px;
   border: 2px solid var(--secondary-color);
-  margin: 4rem auto 3rem;
+  margin: 4rem auto 3rem auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -570,14 +570,14 @@ body {
 .logo-image {
   width: 450px;
   height: 250px;
-  margin: 3rem auto 0;
+  margin: 3rem auto 0 auto;
   border: var(--secondary-color);
 }
 
 .solid2 {
   margin: 0 auto;
   width: 100vw;
-  background-color: rgb(204 198 198 / 66%);
+  background-color: rgba(204, 198, 198, 0.66);
 }
 
 .see-past {
@@ -595,12 +595,12 @@ body {
 }
 
 .past-heading {
-  margin: 0 auto 1rem;
+  margin: 0 auto 1rem auto;
   font-size: 3rem;
 }
 
 .past-text {
-  margin: -1rem auto 0;
+  margin: -1rem auto 0 auto;
   text-align: center;
   font-size: 1.5rem;
 }
@@ -648,7 +648,7 @@ body {
   color: var(--body-color);
   font-size: 1.6rem;
   font-weight: 600;
-  margin: 1.5rem 0;
+  margin: 1.5rem 0 1.5rem 0;
 }
 
 /* Footer Section */
@@ -687,7 +687,7 @@ body {
     display: flex;
     flex-direction: column;
     position: absolute;
-    background: rgb(236 82 66 / 80%);
+    background: rgba(236, 82, 66, 0.8);
     backdrop-filter: blur(5px);
     height: 100vh;
     width: 250px;
@@ -977,7 +977,7 @@ body {
   }
 
   .layer p {
-    margin: 0.5rem 0 1.5rem;
+    margin: 0.5rem 0 1.5rem 0;
     padding: 1rem;
     text-align: center;
   }
