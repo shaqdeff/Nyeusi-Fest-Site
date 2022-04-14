@@ -168,7 +168,7 @@ body {
   background-size: cover;
   position: relative;
   padding-top: 7rem;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
 }
 
 .welcome-container {
@@ -294,7 +294,7 @@ body {
   flex-direction: column;
   padding: 1.6rem;
   background: #3f4147b4;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 .schedule-card:hover {
@@ -694,6 +694,7 @@ body {
 
 .heineken-logo {
   width: 20vw;
+  margin-right: 1.5rem;
 }
 
 .cocacola-logo {
