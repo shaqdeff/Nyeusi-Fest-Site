@@ -800,8 +800,6 @@ body {
   color: var(--secondary-color);
 }
 
-
-
 @media screen and (max-width: 768px) {
   /* Header/Navigation Bar */
   .page-info {
