@@ -60,7 +60,7 @@ body {
   height: 30px;
   position: fixed;
   width: 100%;
-  z-index: 5;
+  z-index: 99;
   top: 0;
 }
 
@@ -96,7 +96,7 @@ body {
   width: 100%;
   background: var(--body-color);
   position: fixed;
-  z-index: 20;
+  z-index: 99;
   top: 2.8rem;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
@@ -145,6 +145,10 @@ body {
 
 .btn:hover {
   background: var(--secondary-color);
+}
+
+.btn:active {
+  background: #949292;
 }
 
 .fas.fa-times {
@@ -289,6 +293,12 @@ body {
   flex-direction: column;
   padding: 1.6rem;
   background: #3f4147b4;
+  transition: 0.5s;
+}
+
+.schedule-card:hover {
+  transform: scale(1.05);
+  border: 1px solid #898787cc;
 }
 
 .fa-ticket,
@@ -610,6 +620,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2.5rem;
+  padding-bottom: 4rem;
 }
 
 .past-images {
@@ -652,18 +663,169 @@ body {
 }
 
 /* Footer Section */
-.footer-section {
+.partner-section {
   background: var(--primary-color);
+}
+
+.partner-container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 1.6rem;
+  width: 100vw;
+}
+
+.partner-container h2 {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--mobile-secondary-color);
+  padding-top: 2rem;
+}
+
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin-top: -5rem;
+}
+
+.heineken-logo {
+  width: 20vw;
+}
+
+.cocacola-logo {
+  width: 11vw;
+  margin-left: 1.2rem;
+}
+
+.samsung-logo {
+  width: 13vw;
+  margin-left: 1.5rem;
+}
+
+.spotify-logo {
+  width: 11.5vw;
+  margin-left: 2rem;
+}
+
+.footer-section {
+  background: var(--secondary-color);
 }
 
 .footer-container {
   max-width: 100rem;
   margin: 0 auto;
-  padding: 1.6rem;
-  width: 100%;
+  padding: 4rem;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
 }
 
+.footer-logo {
+  width: 100px;
+  height: 60px;
+}
+
+.index-footer-text {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+}
+
+.fa-registered {
+  font-size: 1.1rem;
+}
+
+/* About Footer Section */
+.about-partner-section {
+  background: var(--primary-color);
+  display: none;
+}
+
+.about-partner-container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 1.6rem;
+  width: 100vw;
+}
+
+.about-partner-container h2 {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--mobile-secondary-color);
+  padding-top: 2rem;
+}
+
+.about-partner-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin-top: -5rem;
+}
+
+.heineken-logo {
+  width: 20vw;
+}
+
+.cocacola-logo {
+  width: 11vw;
+  margin-left: 1.2rem;
+}
+
+.samsung-logo {
+  width: 13vw;
+  margin-left: 1.5rem;
+}
+
+.spotify-logo {
+  width: 11.5vw;
+  margin-left: 2rem;
+}
+
+.about-footer-section {
+  background: var(--primary-color);
+}
+
+.about-footer-container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 3rem;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.about-footer-logo {
+  width: 100px;
+  height: 60px;
+}
+
+.footer-logo-desk {
+  display: none;
+  width: 100px;
+  height: 60px;
+}
+
+.about-footer-text {
+  font-size: 1.4rem;
+  color: var(--secondary-color);
+}
+
+.fa-registered {
+  font-size: 1.1rem;
+}
+
+
 @media screen and (max-width: 768px) {
+
   /* Header/Navigation Bar */
   .page-info {
     display: none;
@@ -847,20 +1009,21 @@ body {
 
   .btn-collapse {
     display: flex;
-    color: var(--accent-color);
+    color: var(--secondary-color);
     margin: 0 auto;
     padding-right: 6rem;
     padding-left: 6rem;
     column-gap: 1.5rem;
     align-items: center;
+    border: 2px solid var(--accent-color);
   }
 
   .btn-collapse span {
-    color: var(--primary-color);
+    color: var(--accent-color);
   }
 
   .btn-collapse:hover {
-    color: var(--secondary-color);
+    background-color: var(--body-color);
   }
 
   .fa-angle-down {
@@ -873,7 +1036,7 @@ body {
   }
 
   .btn-collapse:active {
-    background: var(--accent-color);
+    background: var(--mobile-secondary-color);
   }
 
   .fa-angle-up {
@@ -980,5 +1143,110 @@ body {
     margin: 0.5rem 0 1.5rem 0;
     padding: 1rem;
     text-align: center;
+  }
+
+  /* Footer Section */
+  .partner-logos {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .heineken-logo {
+    width: 50vw;
+  }
+
+  .cocacola-logo {
+    width: 30vw;
+    margin-left: 0;
+  }
+
+  .samsung-logo {
+    width: 35vw;
+  }
+
+  .spotify-logo {
+    width: 32vw;
+  }
+
+  .footer-section {
+    background: var(--secondary-color);
+    padding-bottom: 2rem;
+  }
+
+  .footer-container {
+    justify-content: space-around;
+  }
+
+  .footer-container img {
+    width: 80px;
+    height: 50px;
+  }
+
+  .footer-container p {
+    font-size: 1.1rem;
+  }
+
+  .fa-registered {
+    font-size: 1.1rem;
+  }
+
+  /* About Footer Section */
+  .about-partner-section {
+    display: block;
+  }
+
+  .about-partner-logos {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .heineken-logo {
+    width: 50vw;
+  }
+
+  .cocacola-logo {
+    width: 30vw;
+  }
+
+  .samsung-logo {
+    width: 35vw;
+  }
+
+  .spotify-logo {
+    width: 32vw;
+  }
+
+  .about-footer-section {
+    background: var(--secondary-color);
+    padding-bottom: 1rem;
+  }
+
+  .about-footer-container {
+    justify-content: space-around;
+  }
+
+  .about-footer-logo {
+    display: none;
+    width: 80px;
+    height: 50px;
+  }
+  
+  .footer-logo-desk {
+    display: block;
+    width: 80px;
+    height: 50px;
+  }
+
+  .about-footer-text {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+  }
+
+  .fa-registered {
+    font-size: 1.1rem;
   }
 }
