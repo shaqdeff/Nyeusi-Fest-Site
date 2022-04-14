@@ -29,6 +29,9 @@ git clone https://github.com/shaqdeff/Concert-Website.git
 
 - Once the files are on your machine, open the **Concert-Website** folder in [Visual Studio Code](https://code.visualstudio.com/download).
 
+## Live Demo
+- See [Live Demo](https://shaqdeff.github.io/Concert-Website/).
+
 ## Deployment
 
 - After opening the files in Visual Studio Code, press the **Go Live** button on the status bar (bottom of the window) to launch the files with Live Server.
