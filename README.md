@@ -36,9 +36,10 @@ To get a local copy up and running follow these simple steps.
 git clone https://github.com/shaqdeff/Nyeusi-Fest-Site.git
 ```
 
-- Once the files are on your machine, open the **Concert-Website** folder in [Visual Studio Code](https://code.visualstudio.com/download).
+- Once the files are on your machine, open the **Nyeusi-Fest-Site** folder in [Visual Studio Code](https://code.visualstudio.com/download).
 
 ## Live Demo
+
 - See [Live Demo](https://shaqdeff.github.io/Nyeusi-Fest-Site/).
 
 ## Deployment
@@ -62,8 +63,8 @@ Contributions, issues, and feature requests are welcome!
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
+
 - Original design idea by [Cindy Shin](https://www.behance.net/adagio07) in Behance.
 - Background photo by [Nick Kane](https://unsplash.com/@nickkane) on [Unsplash](https://unsplash.com/photos/NMx_9N2QC5o).
-- Lagos background Photo by [Samantha Gades](https://unsplash.com/@srosinger3997?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/fIHozNWfcvs).  
+- Lagos background Photo by [Samantha Gades](https://unsplash.com/@srosinger3997?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/fIHozNWfcvs).
 - Johannesburg background Photo by [Kate Trysh](https://unsplash.com/@katetrysh?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/E5xQlNnngO0).
-  
